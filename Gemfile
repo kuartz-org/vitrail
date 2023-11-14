@@ -5,6 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gemspec
 
 gem "view_component", ">= 3.7"
+gem "tailwindcss-rails"
 
 gem "puma"
 gem "sqlite3"
