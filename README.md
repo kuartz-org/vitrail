@@ -1,8 +1,5 @@
 # Vitrail
-Short description and motivation.
-
-## Usage
-How to use my plugin.
+Kuartz's Design system view components.
 
 ## Installation
 Add this line to your application's Gemfile:
@@ -21,8 +18,12 @@ Or install it yourself as:
 $ gem install vitrail
 ```
 
-## Contributing
-Contribution directions go here.
+## Development
+
+watch tailwindcss changes with:
+```bash
+tailwindcss_watch
+```
 
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
