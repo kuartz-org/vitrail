@@ -2,6 +2,12 @@
 
 module Vitrail
   class Title < BaseComponent
+    erb_template <<-ERB
+      <h<%= level %> class="<%= html_classes %>" <%= html_attributes %>>
+        <%= content %>
+      </h<%= level %>>
+    ERB
+
     LEVEL_CLASSES = {
       1 => "mt-10 mb-4 text-2xl xl:text-3xl font-bold tracking-tight text-slate-900",
       2 => "mt-8 mb-2 text-xl xl:text-2xl font-bold tracking-tight text-slate-900",
@@ -11,13 +17,9 @@ module Vitrail
 
     private attr_reader :level
 
-    def initialize(level: 1, **html_attributes)
-      super(**html_attributes)
+    def initialize(level: 1, **html_options)
+      super(**html_options)
       @level = level
-    end
-
-    def call
-      content_tag("h#{level}", content, class: html_classes, **html_options)
     end
 
     private
