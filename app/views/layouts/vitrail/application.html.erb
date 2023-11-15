@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Vitrail</title>
-  <%= csrf_meta_tags %>
-  <%= csp_meta_tag %>
+  <head>
+    <title>Vitrail</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
 
-  <%= stylesheet_link_tag "vitrail", "data-turbo-track": "reload" %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+    <%= stylesheet_link_tag "vitrail", "data-turbo-track": "reload" %>
+  </head>
+  <body>
+    <main class="p-20">
+      <%= yield %>
+    </main>
+  </body>
 </html>

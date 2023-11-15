@@ -700,6 +700,25 @@ select {
   --tw-backdrop-sepia:  ;
 }
 
+.p-20 {
+  padding: 5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.text-blue-700 {
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity));
+}
+
 /*
 
 @layer components {

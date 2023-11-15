@@ -6,6 +6,7 @@ gemspec
 
 gem "view_component", ">= 3.7"
 gem "tailwindcss-rails"
+gem "lookbook", ">= 2.1.1"
 
 gem "puma"
 gem "sqlite3"
