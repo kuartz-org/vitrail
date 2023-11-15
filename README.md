@@ -34,7 +34,6 @@ In `config/tailwind.config.js`,
       ],
     ```
 
-
 ## Development
 
 watch tailwindcss changes with:
