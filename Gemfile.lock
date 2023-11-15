@@ -2,9 +2,9 @@ PATH
   remote: .
   specs:
     vitrail (0.1.0)
-      rails (>= 7.1.2)
-      tailwindcss-rails
-      view_component (>= 3.7)
+      rails (~> 7)
+      tailwindcss-rails (~> 2)
+      view_component (~> 3)
 
 GEM
   remote: https://rubygems.org/
