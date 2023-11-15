@@ -2,10 +2,10 @@
 
 module Vitrail
   class Title < BaseComponent
-    erb_template <<-ERB
-      <h<%= level %> class="<%= html_classes %>" <%= html_attributes %>>
-        <%= content %>
-      </h<%= level %>>
+    erb_template <<~ERB.squish
+    <h<%= level %> class="<%= html_classes %>" <%= html_attributes %>>
+      <%= content %>
+    </h<%= level %>>
     ERB
 
     LEVEL_CLASSES = {
