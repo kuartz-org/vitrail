@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-
 class TablePreview < ViewComponent::Preview
   def standard
     render_with_template(locals: { users: })
