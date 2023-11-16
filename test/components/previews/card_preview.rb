@@ -21,7 +21,12 @@ class CardPreview < ViewComponent::Preview
   end
   # @!endgroup
 
+  # Card component comes with a default background color `bg-white` and border
+  # color `border-slate-200`.
+  #
+  # If you want to override them, you must use the important modifier (!) in
+  # your CSS class.
   def custom_css
-    render Vitrail::Card.new(class: "bg-red-100 border-red-200 text-red-800").with_content("Card with custom background")
+    render Vitrail::Card.new(class: "!bg-red-100 !border-red-200 text-red-800").with_content("Card with custom background")
   end
 end

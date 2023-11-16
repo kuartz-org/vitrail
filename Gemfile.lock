@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    vitrail (0.2.0)
+    vitrail (0.2.1)
       rails (~> 7)
       tailwindcss-rails (~> 2)
       view_component (~> 3)

@@ -1,12 +1,17 @@
 ---
-label: Vitrail
-priority: 1
-landing: true
+label: Installation
 ---
 
-Kuartz's Design system view components.
+## 1. Requirements
 
-## Installation
+- Ruby 3+
+- Rails 7+
+- Tailwindcss 2+
+- ViewComponent 3+
+- Fontawesome
+
+## 2. Add the gem
+
 Add this line to your application's Gemfile:
 
 ```ruby
@@ -18,7 +23,10 @@ And then execute:
 $ bundle
 ```
 
-### Configuration for Tailwindcss to parse class names from components
+## 3. Configuration
+
+### Setup Tailwindcss to parse class names from components
+
 In `config/tailwind.config.js`,
 
 - add before `module.exports`
