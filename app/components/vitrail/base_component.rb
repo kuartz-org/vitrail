@@ -13,13 +13,10 @@ module Vitrail
 
     private
 
-    def local_classes
-      ""
-    end
+    def local_classes = ""
 
     def html_attributes
-      ActionView::Helpers::TagHelper::TagBuilder.new(view_context).
-        attributes(html_options)
+      tag.attributes(html_options)
     end
 
     def html_classes

@@ -1,0 +1,19 @@
+<div class="flow-root" <%= html_attributes %>>
+  <div class="overflow-x-auto">
+    <div class="inline-block min-w-full align-middle">
+      <table class="table-auto min-w-full divide-y divide-gray-300">
+        <thead class="sticky top-0 bg-white">
+          <tr>
+            <% headers.each do |header| %>
+              <%= header %>
+            <% end %>
+          </tr>
+        <tbody class="divide-y divide-gray-200">
+          <% rows.each do |row| %>
+            <%= row %>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

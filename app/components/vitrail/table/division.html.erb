@@ -1,0 +1,9 @@
+<td class="<%= html_classes %>" <%= html_attributes %>>
+  <% if link_to? %>
+    <%= link_to link_path, class: "block -mx-3 px-3 -my-4 py-4" do %>
+      <%= content || "&nbsp;".html_safe %>
+    <% end %>
+  <% else %>
+    <%= content || "&nbsp;".html_safe %>
+  <% end %>
+</td>

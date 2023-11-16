@@ -1,3 +1,36 @@
-<%= render Vitrail::Title.new(level: 2, class: "bg-red-600", id: 2, data: { controller: "coucou" }).with_content("hello") %>
+<% items = [ { alice: "alice@example.com" }, { bob: "bob@example.com" } ] %>
 
-<%= render Vitrail::Title.new(class: "bg-red-600").with_content("hello") %>
+<section class="my-4 container mx-auto">
+  <%= render Vitrail::Card.new(title: "default table") do %>
+    <%= render Vitrail::Table.new do |table| %>
+      <%= table.with_header.with_content("id") %>
+      <%= table.with_header.with_content("value") %>
+
+      <% items.each do |item| %>
+        <%= table.with_row do |row| %>
+          <%= row.with_division.with_content(item.keys.first) %>
+          <%= row.with_division.with_content(item.values.first) %>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
+</section>
+
+
+<section class="my-4 container mx-auto">
+  <%= render Vitrail::Card.new(title: "table with links") do %>
+    <%= render Vitrail::Table.new do |table| %>
+      <%= table.with_header.with_content("id") %>
+      <%= table.with_header.with_content("value") %>
+      <%= table.with_header.with_content("count") %>
+
+      <% items.each do |item| %>
+        <%= table.with_row(link_to: "#td", td: { class: "bg-red-500" }, title: "hi") do |row| %>
+          <%= row.with_division.with_content(item.keys.first) %>
+          <%= row.with_division(class: "bg-green-100").with_content(item.values.first) %>
+          <%= row.with_division(link_to: "#count").with_content(item.values.size) %>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
+</section>

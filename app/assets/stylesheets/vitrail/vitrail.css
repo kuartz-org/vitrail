@@ -708,12 +708,26 @@ select {
   top: 0px;
 }
 
+.-mx-3 {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+.-my-4 {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
 
 .ml-2 {
   margin-left: 0.5rem;
+}
+
+.block {
+  display: block;
 }
 
 .inline-block {
@@ -783,6 +797,11 @@ select {
   padding: 5rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -791,6 +810,10 @@ select {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .align-middle {
