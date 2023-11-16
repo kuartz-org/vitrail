@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.1
+
+### Features
+
+* Improve documentation, available at [vitrail.kuartz.io](https://vitrail.kuartz.io/)
+
+### Bug Fixes
+
+* Remove lookbook config
+
 ## 0.2.0
 
 ### Features
