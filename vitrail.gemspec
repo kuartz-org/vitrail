@@ -25,5 +25,4 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rails", "~> 7"
   spec.add_dependency "view_component", "~> 3"
   spec.add_dependency "tailwindcss-rails", "~> 2"
-  spec.add_development_dependency "lookbook", "~> 2"
 end
