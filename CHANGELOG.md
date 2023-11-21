@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.0
+
+* Add custom classes to the table component
+
 ## 0.2.1
 
 ### Features
