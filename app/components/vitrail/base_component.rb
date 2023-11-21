@@ -14,10 +14,7 @@ module Vitrail
     private
 
     def local_classes = ""
-
-    def html_attributes
-      tag.attributes(html_options)
-    end
+    def html_attributes = tag.attributes(html_options)
 
     def html_classes
       [local_classes, custom_classes].reject(&:blank?).join(" ")

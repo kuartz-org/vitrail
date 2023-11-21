@@ -45,6 +45,18 @@ class TablePreview < ViewComponent::Preview
     render_with_template(locals: { users: })
   end
 
+  ## Table with custom classes
+  # ----------------
+  # Custom classes will not be passes at the top level div, but to the first
+  # child. The reason is to keep the `div.flow-root` cleared of any custom
+  # classes.
+  #
+  # This example showcases the sticky header feature when you pass a max height
+  # class to the component.
+  def with_custom_classes
+    render_with_template(locals: { users: long_list_users})
+  end
+
   private
 
   def users
@@ -53,5 +65,11 @@ class TablePreview < ViewComponent::Preview
       OpenStruct.new(id: 2, name: "Bob", email: "bob@example.com"),
       OpenStruct.new(id: 3, name: "Charlie", email: "charlie@example.com"),
     ]
+  end
+
+  def long_list_users
+    @long_list_users ||= 10.times.map do |i|
+      OpenStruct.new(id: i + 1, name: "User #{i + 1}", email: "user#{i + 1}@example.com")
+    end
   end
 end
