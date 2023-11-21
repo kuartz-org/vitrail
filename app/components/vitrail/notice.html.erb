@@ -1,0 +1,15 @@
+<%= render Vitrail::Card.new(class: level_background) do %>
+  <div class="flex">
+    <div class="flex-shrink-0">
+      <i class="<%= level_icon %>"></i>
+    </div>
+    <div class="ml-3">
+      <h4 class="font-semibold text-slate-900">
+        <%= title %>
+      </h4>
+      <div class="text-slate-600">
+        <%= content %>
+      </div>
+    </div>
+  </div>
+<% end %>
