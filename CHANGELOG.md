@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.0
+
+### Features
+
+* Add LinkTo component
+* Add Badge component
+* Add Notice component
+
 ## 0.3.0
 
 * Add custom classes to the table component
