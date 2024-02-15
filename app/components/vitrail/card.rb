@@ -2,7 +2,7 @@
 
 module Vitrail
   class Card < BaseComponent
-    LOCAL_CLASSES = "border border-slate-200 rounded px-4 py-2 bg-white shadow-sm"
+    LOCAL_CLASSES = "vt-card--wrapper"
 
     private attr_reader :title, :icon
 

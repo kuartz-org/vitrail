@@ -5,6 +5,6 @@ module Vitrail
     renders_many :headers, Table::Header
     renders_many :rows, Table::Row
 
-    def local_classes = "overflow-x-auto"
+    def local_classes = "vt-table--wrapper"
   end
 end

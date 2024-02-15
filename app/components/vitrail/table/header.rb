@@ -9,7 +9,7 @@ module Vitrail
       </th>
       ERB
 
-      LOCAL_CLASSES = "px-3 py-4 text-left text-sm font-semibold text-gray-900"
+      LOCAL_CLASSES = "vt-table--header"
 
       private
 

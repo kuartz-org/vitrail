@@ -14,19 +14,12 @@ module Vitrail
 
     attr_reader :level, :options, :html_options
 
-    GLOBAL_CLASSES = "font-semibold px-3 py-2".freeze
+    GLOBAL_CLASSES = "vt-link-to".freeze
     private_constant :GLOBAL_CLASSES
 
     LEVEL_CLASSES = {
-      primary: <<~TXT.squish,
-        text-indigo-600 hover:text-indigo-500
-        focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2
-        focus-visible:outline-indigo-600
-      TXT
-      secondary: <<~TXT.squish,
-        text-slate-700 hover:text-slate-80
-        underline decoration-dashed underline-offset-4 decoration-slate-500
-      TXT
+      primary: "vt-link-to--level-primary",
+      secondary: "vt-link-to--level-secondary"
     }.freeze
     private_constant :LEVEL_CLASSES
     def level_classes

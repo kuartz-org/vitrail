@@ -2,12 +2,163 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
-
 @layer components {
-  .btn-primary {
-    @apply py-2 px-4 bg-blue-200;
+  .vt-body {
+    @apply px-8 py-4 margin-x-auto;
+  }
+
+  .vt-badge--container {
+    @apply inline-flex items-center rounded-full px-2 py-1 text-xs font-medium ring-1 ring-inset;
+  }
+
+  .vt-badge--level-default {
+    @apply bg-blue-50 text-blue-700 ring-blue-700/10;
+  }
+
+  .vt-badge--level-info {
+    @apply bg-blue-50 text-blue-700 ring-blue-700/10;
+  }
+
+  .vt-badge--level-positive {
+    @apply bg-green-50 text-green-700 ring-green-700/10;
+  }
+
+  .vt-badge--level-negative {
+    @apply bg-yellow-50 text-yellow-700 ring-yellow-700/10;
+  }
+
+  .vt-badge--level-warning {
+    @apply bg-red-50 text-red-700 ring-red-700/10;
+  }
+
+  .vt-badge--level-urgent {
+    @apply bg-red-700 text-white ring-red-700/10;
+  }
+
+  .vt-card--wrapper {
+    @apply border border-slate-200 rounded px-4 py-2 bg-white shadow-sm;
+  }
+
+  .vt-card-container {
+    @apply flex justify-between items-center mb-2;
+  }
+
+  .vt-card--title {
+    @apply truncate text-sm font-medium text-slate-500;
+  }
+
+  .vt-card--icon {
+    @apply fa-light text-slate-600 ml-2;
+  }
+
+  .vt-link-to {
+    @apply font-semibold px-3 py-2;
+  }
+
+  .vt-link-to--level-primary {
+    @apply text-indigo-600 hover:text-indigo-500
+           focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2
+           focus-visible:outline-indigo-600;
+  }
+
+  .vt-link-to--level-secondary {
+    @apply text-slate-700 hover:text-slate-80
+           underline decoration-dashed underline-offset-4 decoration-slate-500;
+  }
+
+  .vt-notice--level-bg-default {
+    @apply !bg-gray-50;
+  }
+
+  .vt-notice--level-bg-caution {
+    @apply !bg-yellow-50;
+  }
+
+  .vt-notice--level-bg-critical {
+    @apply !bg-red-50;
+  }
+
+  .vt-notice--level-icon-default {
+    @apply fa-solid fa-square-info text-gray-500;
+  }
+
+  .vt-notice--level-icon-caution {
+    @apply fa-solid fa-square-info text-yellow-600;
+  }
+
+  .vt-notice--level-icon-critical {
+    @apply fa-solid fa-triangle-exclamation text-red-600;
+  }
+
+  .vt-notice--container {
+    @apply flex;
+  }
+
+  .vt-notice--icon-container {
+    @apply flex-shrink-0;
+  }
+
+  .vt-notice--title-container {
+    @apply ml-3;
+  }
+
+  .vt-notice--title {
+    @apply font-semibold text-slate-900;
+  }
+
+  .vt-notice--content-container {
+    @apply text-slate-600;
+  }
+
+  .vt-table--wrapper {
+    @apply overflow-x-auto;
+  }
+
+  .vt-table--container {
+    @apply inline-block min-w-full align-middle;
+  }
+
+  .vt-table {
+    @apply table-auto min-w-full divide-y divide-gray-300;
+  }
+
+  .vt-table--head {
+    @apply sticky top-0 bg-white;
+  }
+
+  .vt-table--body {
+    @apply divide-y divide-gray-200;
+  }
+
+  .vt-table--header {
+    @apply px-3 py-4 text-left text-sm font-semibold text-gray-900;
+  }
+
+  .vt-table--row {
+    @apply group;
+  }
+
+  .vt-table--division {
+    @apply whitespace-nowrap px-3 py-4 text-sm text-gray-500;
+  }
+
+  .vt-table--division-link-to-container {
+    @apply group-hover:bg-gray-50;
+  }
+
+  .vt-table--division-link-to {
+    @apply block -mx-3 px-3 -my-4 py-4;
+  }
+
+  .vt-title--level-one {
+    @apply mt-10 mb-4 text-2xl xl:text-3xl font-bold tracking-tight text-slate-900;
+  }
+
+  .vt-title--level-two {
+    @apply mt-8 mb-2 text-xl xl:text-2xl font-bold tracking-tight text-slate-900;
+  }
+
+  .vt-title--level-three {
+    @apply mt-4 mb-1 xl:text-lg font-semibold tracking-tight text-slate-800;
   }
 }
-
-*/

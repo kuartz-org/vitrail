@@ -9,9 +9,9 @@ module Vitrail
     ERB
 
     LEVEL_CLASSES = {
-      1 => "mt-10 mb-4 text-2xl xl:text-3xl font-bold tracking-tight text-slate-900",
-      2 => "mt-8 mb-2 text-xl xl:text-2xl font-bold tracking-tight text-slate-900",
-      3 => "mt-4 mb-1 xl:text-lg font-semibold tracking-tight text-slate-800"
+      1 => "vt-title--level-one",
+      2 => "vt-title--level-two",
+      3 => "vt-title--level-three",
     }.freeze
     private_constant :LEVEL_CLASSES
 
