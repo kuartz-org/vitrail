@@ -39,7 +39,7 @@
     @apply border border-slate-200 rounded px-4 py-2 bg-white shadow-sm;
   }
 
-  .vt-card-container {
+  .vt-card--container {
     @apply flex justify-between items-center mb-2;
   }
 
