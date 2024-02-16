@@ -1,14 +1,14 @@
 <div class="flow-root" <%= html_attributes %>>
   <div class="<%= html_classes %>">
-    <div class="inline-block min-w-full align-middle">
-      <table class="table-auto min-w-full divide-y divide-gray-300">
-        <thead class="sticky top-0 bg-white">
+    <div class="vt-table--container">
+      <table class="vt-table">
+        <thead class="vt-table--head">
           <tr>
             <% headers.each do |header| %>
               <%= header %>
             <% end %>
           </tr>
-        <tbody class="divide-y divide-gray-200">
+        <tbody class="vt-table--body">
           <% rows.each do |row| %>
             <%= row %>
           <% end %>

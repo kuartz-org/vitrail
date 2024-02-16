@@ -1,13 +1,13 @@
 <%= render Vitrail::Card.new(class: level_background) do %>
-  <div class="flex">
-    <div class="flex-shrink-0">
+  <div class="vt-notice--container">
+    <div class="vt-notice--icon-container">
       <i class="<%= level_icon %>"></i>
     </div>
-    <div class="ml-3">
-      <h4 class="font-semibold text-slate-900">
+    <div class="vt-notice--title-container">
+      <h4 class="vt-notice--title">
         <%= title %>
       </h4>
-      <div class="text-slate-600">
+      <div class="vt-notice--content-container">
         <%= content %>
       </div>
     </div>

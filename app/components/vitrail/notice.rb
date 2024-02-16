@@ -13,17 +13,17 @@ module Vitrail
     attr_reader :title, :level
 
     LEVEL_BACKGROUNDS = {
-      default: "!bg-gray-50",
-      caution: "!bg-yellow-50",
-      critical: "!bg-red-50"
+      default: "vt-notice--level-bg-default",
+      caution: "vt-notice--level-bg-caution",
+      critical: "vt-notice--level-bg-critical"
     }.freeze
     private_constant :LEVEL_BACKGROUNDS
     def level_background = LEVEL_BACKGROUNDS[level]
 
     LEVEL_ICONS = {
-      default: "fa-solid fa-square-info text-gray-500",
-      caution: "fa-solid fa-square-info text-yellow-600",
-      critical: "fa-solid fa-triangle-exclamation text-red-600"
+      default: "vt-notice--level-icon-default fa-solid fa-square-info",
+      caution: "vt-notice--level-icon-caution fa-solid fa-square-info",
+      critical: "vt-notice--level-icon-critical fa-solid fa-triangle-exclamation"
     }.freeze
     private_constant :LEVEL_ICONS
     def level_icon = LEVEL_ICONS[level]
