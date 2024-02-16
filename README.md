@@ -34,6 +34,14 @@ In `config/tailwind.config.js`,
       ],
     ```
 
+### With TailwindCSS
+
+Copy the content of this [gist](https://gist.github.com/guillaumecabanel/e1d8be7228ca89c13c5d862bd0cc5fdf)
+at the bottom of `app/assets/stylesheets/application.tailwind.css`.
+
+### Custom CSS
+With or without TailwindCSS, you can customize the classes listed in the previous gist.
+
 ## Development
 
 watch tailwindcss changes with:

@@ -21,9 +21,9 @@ module Vitrail
     def level_background = LEVEL_BACKGROUNDS[level]
 
     LEVEL_ICONS = {
-      default: "vt-notice--level-icon-default",
-      caution: "vt-notice--level-icon-caution",
-      critical: "vt-notice--level-icon-critical"
+      default: "vt-notice--level-icon-default fa-solid fa-square-info",
+      caution: "vt-notice--level-icon-caution fa-solid fa-square-info",
+      critical: "vt-notice--level-icon-critical fa-solid fa-triangle-exclamation"
     }.freeze
     private_constant :LEVEL_ICONS
     def level_icon = LEVEL_ICONS[level]
