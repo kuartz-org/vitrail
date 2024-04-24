@@ -1,0 +1,15 @@
+.vt-card--wrapper {
+  @apply border border-slate-200 rounded px-4 py-2 bg-white shadow-sm;
+}
+
+.vt-card--container {
+  @apply flex justify-between items-center mb-2;
+}
+
+.vt-card--title {
+  @apply truncate text-sm font-medium text-slate-500;
+}
+
+.vt-card--icon {
+  @apply text-slate-600 ml-2;
+}

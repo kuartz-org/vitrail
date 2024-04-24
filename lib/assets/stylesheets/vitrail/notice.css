@@ -1,0 +1,43 @@
+.vt-notice--level-bg-default {
+  @apply !bg-gray-50;
+}
+
+.vt-notice--level-bg-caution {
+  @apply !bg-yellow-50;
+}
+
+.vt-notice--level-bg-critical {
+  @apply !bg-red-50;
+}
+
+.vt-notice--level-icon-default {
+  @apply text-gray-500;
+}
+
+.vt-notice--level-icon-caution {
+  @apply text-yellow-600;
+}
+
+.vt-notice--level-icon-critical {
+  @apply text-red-600;
+}
+
+.vt-notice--container {
+  @apply flex;
+}
+
+.vt-notice--icon-container {
+  @apply flex-shrink-0;
+}
+
+.vt-notice--title-container {
+  @apply ml-3;
+}
+
+.vt-notice--title {
+  @apply font-semibold text-slate-900;
+}
+
+.vt-notice--content-container {
+  @apply text-slate-600;
+}

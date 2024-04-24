@@ -1,16 +1,31 @@
-<%= render Vitrail::LinkTo.new(:secondary, "#link_with_block") do %>
-  <span>Link in block</span>
-<% end %>
+<div class="flex justify-between items-end">
+  <%= render Vitrail::Title.new.with_content("Youhou") %>
+  <%= render Vitrail::LinkTo.new(:secondary, "#link_with_block") do %>
+    <span>Link in block</span>
+  <% end %>
+</div>
 
-<%= render Vitrail::Table.new(id: "users", data: { controller: "table" }) do |table| %>
-  <%= table.with_header.with_content("#") %>
-  <%= table.with_header.with_content("Name") %>
-  <%= table.with_header(class: "text-right").with_content("Email") %>
-  <% @users.each do |user| %>
-    <% table.with_row(td: { data: { table_target: "division" } }) do |row| %>
-      <%= row.with_division.with_content(user.id) %>
-      <%= row.with_division.with_content(user.name) %>
-      <%= row.with_division(class: "text-right").with_content(user.email) %>
+<div class="flex space-x-8">
+  <%= render Vitrail::Card.new(title: "Registrations", icon: "user") do %>
+    <p class="text-3xl font-bold font-mono">402</p>
+  <% end %>
+  <%= render Vitrail::Card.new(title: "Revenue", icon: "circle-euro") do %>
+    <p class="text-3xl font-bold font-mono">12&nbsp;345&nbsp;<span class="text-gray-600 text-xl">€</span></p>
+  <% end %>
+</div>
+
+<%= render Vitrail::Title.new(level: 2).with_content("User") %>
+<%= render Vitrail::Card.new do %>
+  <%= render Vitrail::Table.new(id: "users", data: { controller: "table" }) do |table| %>
+    <%= table.with_header.with_content("#") %>
+    <%= table.with_header.with_content("Name") %>
+    <%= table.with_header(class: "text-right").with_content("Email") %>
+    <% @users.each do |user| %>
+      <% table.with_row(td: { data: { table_target: "division" } }) do |row| %>
+        <%= row.with_division.with_content(user.id) %>
+        <%= row.with_division.with_content(user.name) %>
+        <%= row.with_division(class: "text-right").with_content(user.email) %>
+      <% end %>
     <% end %>
   <% end %>
 <% end %>

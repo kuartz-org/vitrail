@@ -4,7 +4,7 @@ module Vitrail
   class Table
     class Header < BaseComponent
       erb_template <<~ERB.squish
-      <th class="<%= html_classes %> scope="col" <%= html_attributes %>>
+      <th class="<%= html_classes %>" scope="col" <%= html_attributes %>>
         <%= content %>
       </th>
       ERB
