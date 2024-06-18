@@ -11,7 +11,7 @@ Kuartz's Design system view components.
 
 In your Gemfile, add this line:
 ```ruby
-gem "vitrail", "~> 2"
+gem "vitrail", "~> 1.0"
 ```
 
 Then, run `bundle install`.
