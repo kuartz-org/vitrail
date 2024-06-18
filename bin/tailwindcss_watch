@@ -1,6 +1,0 @@
-#!/usr/bin/env sh
-
-tailwindcss -i app/assets/stylesheets/vitrail.tailwind.css \
-        -o app/assets/stylesheets/vitrail/vitrail.css \
-        -c config/tailwind.config.js \
-        -w

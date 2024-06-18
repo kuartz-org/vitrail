@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.O.O
+
+BREAKING CHANGES
+
+We change the way we install and use the Vitrail Gem in this version.
+Check the README.md file for more information.
+
+There are less components in this version, but we are working to add more in the
+future.
+
 ## 0.4.0
 
 ### Features
