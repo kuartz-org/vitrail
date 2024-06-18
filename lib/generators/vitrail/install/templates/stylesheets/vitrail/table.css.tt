@@ -1,0 +1,37 @@
+@layer components {
+  .vt-table--container {
+    @apply relative w-full overflow-auto;
+  }
+
+  .vt-table {
+    @apply w-full caption-bottom text-sm;
+  }
+
+  .vt-table--head {
+    @apply [&_tr]:border-b;
+  }
+
+  .vt-table--body {
+    @apply divide-y divide-gray-200;
+  }
+
+  .vt-table--header {
+    @apply h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0;
+  }
+
+  .vt-table--row {
+    @apply border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted;
+  }
+
+  .vt-table--division {
+    @apply p-4 align-middle [&:has([role=checkbox])]:pr-0;
+  }
+
+  .vt-table--division-link-to-container {
+    @apply group-hover:bg-gray-50;
+  }
+
+  .vt-table--division-link-to {
+    @apply block -mx-3 px-3 -my-4 py-4;
+  }
+}

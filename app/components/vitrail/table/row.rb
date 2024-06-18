@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Vitrail
-  class Table
+  module Table
     class Row < BaseComponent
       erb_template <<~ERB.squish
       <tr class="vt-table--row group" <%= html_attributes %>>

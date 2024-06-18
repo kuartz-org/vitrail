@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Vitrail
-  class Table
+  module Table
     class Header < BaseComponent
       erb_template <<~ERB.squish
       <th class="<%= html_classes %>" scope="col" <%= html_attributes %>>

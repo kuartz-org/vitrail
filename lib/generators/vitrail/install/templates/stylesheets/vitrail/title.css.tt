@@ -1,0 +1,21 @@
+@layer components {
+  .vt-title {
+    @apply scroll-m-20 font-semibold tracking-tight mt-8;
+  }
+
+  .vt-title.vt-title--level1 {
+    @apply text-4xl font-extrabold lg:text-5xl;
+  }
+
+  .vt-title.vt-title--level2 {
+    @apply border-b mb-4 pb-2 text-3xl;
+  }
+
+  .vt-title.vt-title--level3 {
+    @apply text-2xl;
+  }
+
+  .vt-title.vt-title--level4 {
+    @apply text-xl;
+  }
+}

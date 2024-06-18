@@ -1,0 +1,24 @@
+/* HSL Values from https://tailscan.com/colors */
+@layer base {
+  :root {
+    --hsl-white: 0deg 0% 100%;
+
+    --hsl-zinc-50: 0deg 0% 98%;
+    --hsl-zinc-100: 240deg 5% 96%;
+    --hsl-zinc-200: 240deg 6% 90%;
+    --hsl-zinc-400: 240deg 5% 65%;
+    --hsl-zinc-500: 240deg 4% 46%;
+    --hsl-zinc-900: 240deg 6% 10%;
+    --hsl-zinc-950: 240deg 10% 4%;
+
+    --hsl-slate-50: 210deg 40% 98%;
+    --hsl-slate-100: 210deg 40% 96%;
+    --hsl-slate-200: 214deg 32% 91%;
+    --hsl-slate-400: 215deg 20% 65%;
+    --hsl-slate-500: 215deg 16% 47%;
+    --hsl-slate-900: 222deg 47% 11%;
+    --hsl-slate-950: 229deg 84% 5%;
+
+    --hsl-red-600: 0deg 72% 51%;
+  }
+}

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Vitrail
-  class Table
+  module Table
     class Division < BaseComponent
       LOCAL_CLASSES = "vt-table--division"
 
