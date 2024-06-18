@@ -1,0 +1,36 @@
+@layer components {
+  .vt-link {
+    @apply inline-flex items-center justify-center whitespace-nowrap rounded-md;
+    @apply text-sm font-medium ring-offset-background transition-colors;
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2;
+    @apply disabled:pointer-events-none disabled:opacity-50;
+  }
+  .vt-link--variant-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90;
+  }
+  .vt-link--variant-outline {
+    @apply border border-input bg-background hover:bg-accent hover:text-accent-foreground;
+  }
+  .vt-link--variant-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/70;
+  }
+  .vt-link--variant-ghost {
+    @apply hover:bg-accent hover:text-accent-foreground;
+  }
+  .vt-link--variant-default {
+    @apply text-primary underline-offset-4 hover:underline;
+  }
+
+  .vt-link--size-default {
+    @apply h-10 px-4 py-2;
+  }
+  .vt-link--size-sm {
+    @apply h-9 rounded-md px-3;
+  }
+  .vt-link--size-lg {
+    @apply h-11 rounded-md px-8;
+  }
+  .vt-link--size-icon {
+    @apply h-10 w-10;
+  }
+}

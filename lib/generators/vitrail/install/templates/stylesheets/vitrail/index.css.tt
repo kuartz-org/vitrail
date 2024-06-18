@@ -1,0 +1,8 @@
+@import "./primitives.css";
+@import "./config.css";
+
+@import "./card.css";
+@import "./button_tag.css";
+@import "./link_to.css";
+@import "./title.css";
+@import "./table.css";

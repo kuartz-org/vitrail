@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 module Vitrail
-  class Table
+  module Table
     class Division < BaseComponent
-      LOCAL_CLASSES = "whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+      LOCAL_CLASSES = "vt-table--division"
 
       private attr_reader :link_path
 
@@ -17,7 +17,7 @@ module Vitrail
       def link_to? = link_path.present?
 
       def local_classes
-        LOCAL_CLASSES + (" group-hover:bg-gray-50" if link_to?).to_s
+        LOCAL_CLASSES + (" vt-table--division-link-to-container" if link_to?).to_s
       end
     end
   end

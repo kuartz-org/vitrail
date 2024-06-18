@@ -1,0 +1,36 @@
+@layer components {
+  .button {
+    @apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+  }
+  .button--variant-default {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90;
+  }
+  .button--variant-destructive {
+    @apply bg-destructive text-destructive-foreground hover:bg-destructive/90;
+  }
+  .button--variant-outline {
+    @apply border border-input bg-background hover:bg-accent hover:text-accent-foreground;
+  }
+  .button--variant-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/80;
+  }
+  .button--variant-ghost {
+    @apply hover:bg-accent hover:text-accent-foreground;
+  }
+  .button--variant-link {
+    @apply text-primary underline-offset-4 hover:underline;
+  }
+
+  .button--size-default {
+    @apply h-10 px-4 py-2;
+  }
+  .button--size-sm {
+    @apply h-9 rounded-md px-3;
+  }
+  .button--size-lg {
+    @apply h-11 rounded-md px-8;
+  }
+  .button--size-icon {
+    @apply h-10 w-10;
+  }
+}

@@ -1,0 +1,18 @@
+<article class="vt-card">
+  <% if title? || description? %>
+    <header>
+      <% if title? %>
+        <div class="vt-card--title"><%= title %></div>
+      <% end %>
+      <% if description? %>
+        <p class="vt-card--description"><%= description %></p>
+      <% end %>
+    </header>
+  <% end %>
+
+  <%= content %>
+
+  <% if footer? %>
+    <footer><%= footer %></footer>
+  <% end %>
+</article>

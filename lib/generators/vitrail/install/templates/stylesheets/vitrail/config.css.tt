@@ -1,0 +1,23 @@
+@layer base {
+  :root {
+    --border: var(--hsl-zinc-200);
+    --input: var(--hsl-zinc-200);
+    --ring: var(--hsl-zinc-400);
+    --background: var(--hsl-white);
+    --foreground: var(--hsl-zinc-950);
+    --primary: var(--hsl-zinc-900);
+    --primary-foreground: var(--hsl-zinc-50);
+    --secondary: var(--hsl-zinc-100);
+    --secondary-foreground: var(--hsl-zinc-900);
+    --destructive: var(--hsl-red-600);
+    --destructive-foreground: var(--hsl-zinc-50);
+    --muted: var(--hsl-zinc-100);
+    --muted-foreground: var(--hsl-zinc-500);
+    --accent: var(--hsl-zinc-100);
+    --accent-foreground: var(--hsl-zinc-900);
+    --popover: var(--hsl-white);
+    --popover-foreground: var(--hsl-zinc-950);
+    --card: var(--hsl-white);
+    --card-foreground: var(--hsl-zinc-950);
+  }
+}

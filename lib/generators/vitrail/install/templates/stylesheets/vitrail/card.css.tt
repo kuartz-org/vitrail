@@ -1,0 +1,20 @@
+@layer components {
+  .vt-card {
+    @apply rounded-lg border shadow-sm bg-card text-card-foreground p-6 space-y-4 min-w-fit;
+  }
+  .vt-card > header {
+    @apply flex flex-col space-y-1.5;
+  }
+
+  .vt-card > header > .vt-card--title {
+    @apply text-2xl font-semibold leading-none tracking-tight flex justify-between items-center;
+  }
+
+  .vt-card > header > .vt-card--description {
+    @apply text-sm text-muted-foreground;
+  }
+
+  .vt-card > footer {
+    @apply flex justify-between items-center;
+  }
+}
