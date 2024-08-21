@@ -7,8 +7,8 @@ module Vitrail
     def initialize(**html_options)
       super
 
-      @custom_classes = html_options.delete(:class) || ""
       @html_options = html_options.stringify_keys
+      @custom_classes = @html_options.delete(:class) || ""
     end
 
     private
