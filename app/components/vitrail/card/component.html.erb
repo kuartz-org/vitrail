@@ -2,7 +2,13 @@
   <% if title? || description? %>
     <header>
       <% if title? %>
-        <div class="vt-card--title"><%= title %></div>
+        <div class="vt-card--title">
+          <% if link_to.present? %>
+            <%= link_to title, link_to, class: "vt-card--title-link" %>
+          <% else %>
+            <%= title %>
+          <% end %>
+        </div>
       <% end %>
       <% if description? %>
         <p class="vt-card--description"><%= description %></p>
