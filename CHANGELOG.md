@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.4.1
+
+* Allow Rails 8 (`rails >= 7, < 9`)
+
+## 0.4.0
+
+### Features
+
+* Badge component
+* Notice component
+* Link component
+
 ## 0.3.0
 
 * Add custom classes to the table component
