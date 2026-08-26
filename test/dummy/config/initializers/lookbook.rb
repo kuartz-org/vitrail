@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
 Rails.application.configure do
-  config.view_component.preview_paths << Vitrail::Engine.root.join("test/components/previews")
+  # view_component 4 moved preview_paths under the previews namespace
+  vc_preview_paths = config.view_component.previews&.paths || config.view_component.preview_paths
+  vc_preview_paths << Vitrail::Engine.root.join("test/components/previews")
   config.lookbook.preview_paths << Vitrail::Engine.root.join("test/components/previews")
   config.lookbook.page_paths = [Vitrail::Engine.root.join("test/components/docs")]
   config.lookbook.preview_layout = "vitrail/component_preview"

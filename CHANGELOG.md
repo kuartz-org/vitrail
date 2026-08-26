@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.2
+
+* Allow view_component 4 (`view_component >= 3, < 5`)
+* Fix `BaseComponent` initializer for view_component 4 compatibility (bare `super` → `super()`)
+
 ## 0.4.1
 
 * Allow Rails 8 (`rails >= 7, < 9`)

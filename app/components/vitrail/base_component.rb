@@ -5,7 +5,7 @@ module Vitrail
     private attr_reader :html_options, :custom_classes
 
     def initialize(**html_options)
-      super
+      super()
 
       @custom_classes = html_options.delete(:class) || ""
       @html_options = html_options.stringify_keys
